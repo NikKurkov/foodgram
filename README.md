@@ -9,7 +9,7 @@
 - Проект завернут в Docker-контейнеры;
 - Образы foodgram_frontend и foodgram_backend запушены на DockerHub;
 - Реализован workflow c автодеплоем на удаленный сервер и отправкой сообщения в Telegram;
-- Проект ранее был развернут на сервере: <http://51.250.25.224/recipes>
+- Проект ранее был развернут на сервере: <https://foodgram.kurkov.biz/>
 
 ## Развертывание проекта
 
@@ -24,7 +24,3 @@
 7. Заполните базу ингредиентами `docker-compose exec backend python manage.py load_ingredients`.
 8. **Для корректного создания рецепта через фронт, надо создать пару тегов в базе через админку.**
 9. Документация к API находится по адресу: <http://localhost/api/docs/redoc.html>.
-
-## Автор
-
- Андрей Плотников (Andy.Plo@yandex.ru)
