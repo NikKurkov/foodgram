@@ -2,8 +2,14 @@ from django.db.models import Sum
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
-from recipes.models import (Favorite, Ingredient, Recipe, Recipe_ingredient,
-                            Shopping_cart, Tag)
+from recipes.models import (
+    Favorite,
+    Ingredient,
+    Recipe,
+    Recipe_ingredient,
+    Shopping_cart,
+    Tag,
+)
 from rest_framework import filters, mixins, status, viewsets
 from rest_framework.decorators import action
 from rest_framework.permissions import AllowAny, IsAuthenticated
@@ -15,11 +21,18 @@ from foodgram.settings import FILE_NAME
 from .filters import RecipeFilter
 from .pagination import CustomPaginator
 from .permissions import IsAuthorOrReadOnly
-from .serializers import (IngredientSerializer, RecipeCreateSerializer,
-                          RecipeReadSerializer, RecipeSerializer,
-                          SetPasswordSerializer, SubscribeAuthorSerializer,
-                          SubscriptionsSerializer, TagSerializer,
-                          UserCreateSerializer, UserReadSerializer)
+from .serializers import (
+    IngredientSerializer,
+    RecipeCreateSerializer,
+    RecipeReadSerializer,
+    RecipeSerializer,
+    SetPasswordSerializer,
+    SubscribeAuthorSerializer,
+    SubscriptionsSerializer,
+    TagSerializer,
+    UserCreateSerializer,
+    UserReadSerializer,
+)
 
 # -----------------------------------------------------------------------------
 #                            Приложение users
