@@ -21,7 +21,7 @@ jobs:
         - name: Push to Docker Hub
           uses: docker/build-push-action@v2 
           with:
-            context: backend
+            context: ./backend
             push: true
             tags: ${{ secrets.DOCKER_USERNAME }}/foodgram_backend:latest
   
@@ -29,13 +29,16 @@ jobs:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
     steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+        
       - name: Copy compose to server
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
-          source: "./infra/docker-compose.yml"
+          source: "infra/docker-compose.yml"
           target: "~/foodgram/"
 
       - name: executing remote ssh commands to deploy
