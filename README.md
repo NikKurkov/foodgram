@@ -16,7 +16,7 @@
 ### Развертывание на локальном сервере
 
 1. Установите на сервере `docker` и `docker-compose`.
-2. Создайте файл `/infra/.env`. Шаблон для заполнения файла нахоится в `/infra/.env.example`.
+2. Создайте файл `/.env`. Шаблон для заполнения файла нахоится в `/.env.example`.
 3. Выполните команду `docker-compose up -d --buld`.
 4. Выполните миграции `docker-compose exec backend python manage.py migrate`.
 5. Создайте суперюзера `docker-compose exec backend python manage.py createsuperuser`.
