@@ -43,7 +43,7 @@ services:
     image: nikkurkov/foodgram_gateway:latest
     container_name: foodgram_nginx
     ports:
-      - "80:80"
+      - "85:80"
     volumes:
       - static:/var/html/static/
       - media:/var/html/media/
