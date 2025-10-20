@@ -4,12 +4,17 @@
 
 Проект реализован на `Django` и `DjangoRestFramework`. Доступ к данным реализован через API-интерфейс. Документация к API написана с использованием `Redoc`.
 
+## Онлайн-демо
+https://foodgram.kurkov.biz/
+
+## Видео
+[![Смотреть на Vimeo](assets/demo.gif)](https://vimeo.com/1128971020 "Смотреть на Vimeo")
+
 ## Особенности реализации
 
 - Проект завернут в Docker-контейнеры;
 - Образы foodgram_frontend и foodgram_backend запушены на DockerHub;
 - Реализован workflow c автодеплоем на удаленный сервер и отправкой сообщения в Telegram;
-- Проект ранее был развернут на сервере: <https://foodgram.kurkov.biz/>
 
 ## Развертывание проекта
 
