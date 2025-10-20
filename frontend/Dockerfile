@@ -10,4 +10,4 @@ RUN npm install --legacy-peer-deps
 COPY . .
 RUN npm run build
 
-CMD sh -c "mkdir -p /out && rm -rf /out/* && cp -r /app/build/* /out/"
+# CMD sh -c "mkdir -p /out && rm -rf /out/* && cp -r /app/build/* /out/"
