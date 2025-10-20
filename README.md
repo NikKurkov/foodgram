@@ -8,7 +8,7 @@
 https://foodgram.kurkov.biz/
 
 ## Видео
-[![Смотреть на Vimeo](assets/demo.gif)](https://vimeo.com/1128971020 "Смотреть на Vimeo")
+[![Смотреть на Vimeo](asserts/demo.gif)](https://vimeo.com/1128971020 "Смотреть на Vimeo")
 
 ## Особенности реализации
 
