@@ -17,10 +17,10 @@
 
 1. Установите на сервере `docker` и `docker-compose`.
 2. Создайте файл `/.env`. Шаблон для заполнения файла нахоится в `/.env.example`.
-3. Выполните команду `docker-compose up -d --buld`.
-4. Выполните миграции `docker-compose exec backend python manage.py migrate`.
-5. Создайте суперюзера `docker-compose exec backend python manage.py createsuperuser`.
-6. Соберите статику `docker-compose exec backend python manage.py collectstatic --no-input`.
-7. Заполните базу ингредиентами `docker-compose exec backend python manage.py load_ingredients`.
+3. Выполните команду `docker compose up -d --buld`.
+4. Выполните миграции `docker compose exec backend python manage.py migrate`.
+5. Создайте суперюзера `docker compose exec backend python manage.py createsuperuser`.
+6. Соберите статику `docker compose exec backend python manage.py collectstatic --no-input`.
+7. Заполните базу ингредиентами `docker compose exec backend python manage.py load_ingredients`.
 8. **Для корректного создания рецепта через фронт, надо создать пару тегов в базе через админку.**
 9. Документация к API находится по адресу: <http://localhost/api/docs/redoc.html>.
