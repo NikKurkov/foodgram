@@ -110,9 +110,7 @@ jobs:
 
             docker compose -f docker-compose.yml pull
             docker compose -f docker-compose.yml up -d --remove-orphans
-
             # миграции и статика
-            
             docker compose -f docker-compose.yml exec -T backend python manage.py migrate --noinput
             docker compose -f docker-compose.yml exec -T backend python manage.py collectstatic --noinput
 
