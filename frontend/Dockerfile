@@ -1,8 +1,8 @@
 # build env
-FROM node:18 as build
+FROM node:16-alpine AS build
 WORKDIR /app
 
-COPY package.json package.json
+COPY package.json package-lock.json ./
 COPY package-lock.json package-lock.json
 
 RUN npm install --legacy-peer-deps
